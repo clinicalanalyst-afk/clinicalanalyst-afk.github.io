@@ -1,1 +1,65 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mutsumi Cornett — Clinical Data Analyst</title>
+  <meta name="description" content="Portfolio of Mutsumi Cornett — case studies, projects, resume, contact." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Mutsumi Cornett</h1>
+    <p class="subtitle">Clinical Data Analyst • Health Informatics • Case studies & portfolio</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#case-studies">Case studies</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <ul class="projects-list">
+        <li>
+          <h3><a href="https://github.com/yourusername/ed-utilization-case-study">ED Utilization Case Study</a></h3>
+          <p>Exploratory analysis and visualizations on ED utilization. Summary + reproducible code & report.</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/yourusername/clinicalanalyst-afk">Clinical Analyst Repo</a></h3>
+          <p>Profile, README, and other reproducible analyses.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="case-studies">
+      <h2>Executive Summary (Example)</h2>
+      <p>Problem: Emergency Department overcrowding causes longer wait times and worse outcomes.  
+         Result: Identified top 3 drivers of high ED length-of-stay and recommended staffing adjustments.</p>
+      <a class="button" href="ed-utilization-case-study/README.md">View full case study</a>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p><a href="resume.pdf" target="_blank">Download PDF</a> • Short summary: WGU HIM transfer credits, Google Data Analytics Certificate, SQL ready.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">My LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Mutsumi Cornett — Built with GitHub Pages</p>
+  </footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
