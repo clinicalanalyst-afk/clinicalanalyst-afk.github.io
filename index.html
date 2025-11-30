@@ -1,74 +1,78 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mutsumi Cornett — Clinical Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Mutsumi Cornett</h1>
+        <p class="subtitle">Clinical Data Analyst | Healthcare Analytics | Google Data Analytics Certified</p>
+      </div>
 
-export default function Home() {
-  return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 flex flex-col items-center px-6 py-10">
-      {/* NAVIGATION */}
-      <nav className="w-full max-w-5xl flex justify-between items-center mb-10">
-        <h1 className="text-2xl font-bold tracking-tight">Mutsumi Cornett</h1>
-        <div className="flex gap-6 text-lg font-medium">
-          <a href="#about" className="hover:text-blue-600 transition">About</a>
-          <a href="#skills" className="hover:text-blue-600 transition">Skills</a>
-          <a href="#projects" className="hover:text-blue-600 transition">Projects</a>
-          <a href="#contact" className="hover:text-blue-600 transition">Contact</a>
-        </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="case-studies/ed-utilization.html">ED Utilization Case Study</a>
+        <a href="Resume DA Short-3.pdf" target="_blank">Resume</a>
+        <a href="https://github.com/clinicalanalyst-afk" target="_blank" rel="noopener">My GitHub</a>
       </nav>
-
-      {/* HERO */}
-      <motion.section 
-        initial={{ opacity: 0, y: 20 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        className="w-full max-w-5xl text-center mb-20"
-      >
-        <h2 className="text-4xl font-semibold mb-4">Clinical Data Analyst & Health Information Specialist</h2>
-        <p className="text-xl max-w-3xl mx-auto mb-8">
-          Passionate about transforming clinical data into actionable insights. Dedicated to improving healthcare outcomes through data analytics, health information management, and efficient workflow optimization.
-        </p>
-        <Button className="px-6 py-3 text-lg rounded-2xl">View My Work</Button>
-      </motion.section>
-
-      {/* ABOUT */}
-      <section id="about" className="w-full max-w-5xl mb-20">
-        <h3 className="text-3xl font-semibold mb-6">About Me</h3>
-        <Card className="shadow-md rounded-2xl">
-          <CardContent className="p-6 text-lg leading-relaxed">
-            <p className="mb-4">
-              I'm a driven clinical data professional with a strong foundation in healthcare, analytics, and information management. After completing the Google Data Analytics Certificate, I'm continuing my journey toward becoming a highly skilled Clinical Data Analyst with expertise in SQL, healthcare datasets, and electronic health records.
-            </p>
-            <p>
-              My mission is to improve healthcare through data accuracy, meaningful insights, and well-structured information systems. I pride myself on my analytical eye, strong attention to detail, and deep passion for healthcare quality and efficiency.
-            </p>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* SKILLS */}
-      <section id="skills" className="w-full max-w-5xl mb-20">
-        <h3 className="text-3xl font-semibold mb-6">Skills</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className="shadow-md rounded-2xl"><CardContent className="p-6 text-lg">SQL & Databases</CardContent></Card>
-          <Card className="shadow-md rounded-2xl"><CardContent className="p-6 text-lg">Google Data Analytics</CardContent></Card>
-          <Card className="shadow-md rounded-2xl"><CardContent className="p-6 text-lg">Healthcare Data & EHR Knowledge</CardContent></Card>
-          <Card className="shadow-md rounded-2xl"><CardContent className="p-6 text-lg">Clinical Workflow Understanding</CardContent></Card>
-          <Card className="shadow-md rounded-2xl"><CardContent className="p-6 text-lg">Excel, Sheets & Visualization</CardContent></Card>
-          <Card className="shadow-md rounded-2xl"><CardContent className="p-6 text-lg">HIPAA & HIM Fundamentals</CardContent></Card>
-        </div>
-      </section>
-
-      {/* PROJECTS */}
-      <section id="projects" className="w-full max-w-5xl mb-20">
-        <h3 className="text-3xl font-semibold mb-6">Projects</h3>
-        <p className="text-lg text-gray-700">Your featured case studies will go here.</p>
-      </section>
-
-      {/* CONTACT */}
-      <section id="contact" className="w-full max-w-5xl mb-20 text-center">
-        <h3 className="text-3xl font-semibold mb-4">Contact</h3>
-        <p className="text-lg mb-6">Feel free to reach out for collaboration or opportunities!</p>
-        <a href="mailto:mutsumi@example.com" className="text-blue-600 text-xl hover:underline">mutsumi@example.com</a>
-      </section>
     </div>
-  );
-}
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>
+        I’m an analytical healthcare professional with 8+ years of experience in clinical documentation, EMR workflows,
+        and patient data accuracy. I completed the Google Data Analytics Professional Certificate (2025) and I’m
+        starting a B.S. in Health Information Management at WGU in Feb 2026. I’m transitioning into Clinical Data
+        Analytics — combining clinical domain knowledge with SQL, R, Excel, and data visualization skills.
+      </p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">SQL & Databases</div>
+        <div class="skill">R & Data Analysis</div>
+        <div class="skill">Excel & Google Sheets</div>
+        <div class="skill">Data Cleaning & Validation</div>
+        <div class="skill">EMR / EHR Knowledge</div>
+        <div class="skill">ICD-10 & Clinical Documentation</div>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <article class="project">
+        <h3>Emergency Department Utilization Case Study</h3>
+        <p>
+          Exploratory analysis of ED patient flow and length-of-stay drivers using SQL and R. Identified peak
+          times and operational bottlenecks and recommended staffing improvements.
+        </p>
+        <p><a class="button" href="case-studies/ed-utilization.html">View Case Study</a></p>
+      </article>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">linkedin.com/in/your-linkedin</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mutsumi Cornett</p>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
